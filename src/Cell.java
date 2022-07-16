@@ -26,11 +26,7 @@ public class Cell {
 
     // Strength setter method
     public void setStrength(int strength) {
-        if (strength > 0) {
-            this.strength = strength;
-        } else {
-            this.strength = 0;
-        }
+        this.strength = Math.max(strength, 0);
     }
 
     // Strength getter method
@@ -40,11 +36,7 @@ public class Cell {
 
     // X-coordinate setter method
     public void setX(int x) {
-        if (x >= 0) {
-            this.x = x;
-        } else {
-            this.x = 0;
-        }
+        this.x = Math.max(x, 0);
     }
 
     // X-coordinate getter method
@@ -54,11 +46,7 @@ public class Cell {
 
     // Y-coordinate setter method
     public void setY(int y) {
-        if (y >= 0) {
-            this.y = y;
-        } else {
-            this.y = 0;
-        }
+        this.y = Math.max(y, 0);
     }
 
     // Y-coordinate getter method
@@ -68,11 +56,7 @@ public class Cell {
 
     // ID setter method
     public void setId(int id) {
-        if (id > 0) {
-            this.id = id;
-        } else {
-            this.id = 0;
-        }
+        this.id = Math.max(id, 0);
     }
 
     // ID getter method
@@ -82,6 +66,7 @@ public class Cell {
 
     // Main method
     public static void main(String[] args) {
+
 
     }
 }
